@@ -1,10 +1,15 @@
-ast
-re
-fastapi==0.95.2
-uvicorn==0.20.0
-pydantic==1.10.7
-pylint==2.16.2
-language_tool_python==2.9.0
-# Fixing setuptools error
+fastapi
+uvicorn
+gunicorn
+PyMuPDF
+pydantic
+reportlab
+transformers
+torch
+sentencepiece
+difflib
+gramformer
+regex
 setuptools==58.2.0
 wheel
+git clone https://github.com/PrithivirajDamodaran/Gramformer.git
