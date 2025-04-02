@@ -7,7 +7,6 @@ reportlab
 transformers
 torch
 sentencepiece
-gramformer
 regex
 setuptools==58.2.0
 wheel
