@@ -7,7 +7,6 @@ reportlab
 transformers
 torch
 sentencepiece
-difflib
 gramformer
 regex
 setuptools==58.2.0
