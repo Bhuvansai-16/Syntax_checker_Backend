@@ -8,6 +8,10 @@ transformers
 torch
 sentencepiece
 regex
+python-multipart
+pdf2image
+Pillow
+git+https://github.com/PrithivirajDamodaran/Gramformer.git
 setuptools==58.2.0
 wheel
-git+https://github.com/PrithivirajDamodaran/Gramformer.git
+
