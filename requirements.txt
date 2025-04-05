@@ -17,7 +17,7 @@ Pillow
 
 # Gramformer (Grammar correction model)
 git+https://github.com/PrithivirajDamodaran/Gramformer.git
-spacy
+spacy==3.7.1  # Match model version
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 setuptools>=42
 wheel
