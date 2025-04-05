@@ -24,13 +24,6 @@ import subprocess
 import importlib.util
 
 # Auto-download the model if not already installed
-import spacy
-from spacy.util import is_package
-
-model_name = "en_core_web_sm"
-if not is_package(model_name):
-    spacy.cli.download(model_name)
-nlp = spacy.load(model_name)
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
