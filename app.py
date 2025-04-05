@@ -24,6 +24,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+@app.get("/")
+def read_root():
+    return {"message": "FastAPI backend is running"}
 
 # Dependency Injection for model loading
 def get_grammar_checker():
