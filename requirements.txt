@@ -14,3 +14,4 @@ Pillow
 git+https://github.com/PrithivirajDamodaran/Gramformer.git
 setuptools>=42
 wheel
+PyPDF2
