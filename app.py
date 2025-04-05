@@ -19,7 +19,14 @@ import textwrap
 from io import BytesIO
 from reportlab.pdfgen import canvas
 # CORS Configuration
+import spacy
+import subprocess
+import importlib.util
 
+# Auto-download the model if not already installed
+model_name = "en_core_web_sm"
+if importlib.util.find_spec(model_name) is None:
+    subprocess.run(["python", "-m", "spacy", "download", model_name])
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
