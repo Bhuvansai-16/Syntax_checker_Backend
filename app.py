@@ -14,6 +14,7 @@ import tempfile
 import difflib
 import ast
 import re
+import spacy
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -32,9 +33,12 @@ app.add_middleware(
 # Lazy load models to reduce startup memory usage
 gf = None
 grammar_checker = None
+nlp = None
 
 def load_models():
-    global gf, grammar_checker
+    global gf, grammar_checker, nlp
+    if nlp is None:
+        nlp = spacy.load("en_core_web_sm", disable=["ner", "lemmatizer"])  # Minimal Spacy for Gramformer
     if gf is None:
         gf = Gramformer(models=1, use_gpu=False)
     if grammar_checker is None:
