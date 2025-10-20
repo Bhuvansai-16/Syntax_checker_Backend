@@ -1,11 +1,12 @@
 # Use Python 3.9 slim for Gramformer/spaCy 2.x compatibility
 FROM python:3.9-slim
 
-# Install system dependencies for PyMuPDF and other build tools
+# Install system dependencies for PyMuPDF, git (for pip git installs), and other build tools
 RUN apt-get update && apt-get install -y \
     build-essential \
     python3-dev \
     libmupdf-dev \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
